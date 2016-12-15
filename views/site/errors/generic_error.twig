@@ -1,0 +1,35 @@
+{% extends "site/base.twig" %}
+
+{% set page_title = 'Erro!' %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s12 flow-text" id="titulo">
+
+                        <h3>Houve um erro no sistema!</h3>
+
+                        <p>
+                            <br/>
+                            Volte para <a href="/">página principal</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}
+
+{% block footer %}
+    {{ parent() }}
+
+
+{% endblock %}

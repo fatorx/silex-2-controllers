@@ -1,0 +1,9 @@
+.idea/*
+/app/db/*
+/app/data/*
+/app/config/doctrine.php
+/app/cache/doctrine/proxies/*
+/resources/logs/*
+/public/deploy.php
+/vendor/*
+/app/logs/*.txt

@@ -1,0 +1,42 @@
+{
+    "name": "fatorx/book-live",
+    "type": "app",
+    "description": "Sistema para gerar números interativos.",
+    "keywords": ["game", "combat", "study"],
+    "homepage": "https://bitbucket.org/fabiosmendes/book-live",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabio de Souza Mendes",
+            "email": "fbiosm@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "^2.0",
+        "twig/twig": "^1.23",
+        "symfony/var-dumper": "^3.0",
+        "dflydev/doctrine-orm-service-provider": "*",
+        "symfony/console": "*",
+        "guzzlehttp/guzzle": "~6.0",
+        "symfony/yaml" : "*",
+        "mockery/mockery": "*",
+        "elasticsearch/elasticsearch": "~2.0",
+        "filp/whoops": "^2.1",
+        "monolog/monolog": "^1.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App/",
+        }
+    },
+    "config": {
+        "process-timeout": 3000
+    },
+    "extra": [],
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "serve": "php -S 0.0.0.0:8080 -t public/ public/index.php",
+        "test": "phpunit"
+    }
+}
